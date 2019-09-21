@@ -1,4 +1,8 @@
 import math
+import os
+import sys
+
+sys.path.insert(1, os.path.realpath(os.path.pardir))
 from svg_lib import SVG, Path, add_cart
 
 
@@ -64,15 +68,15 @@ def spiral(
   return svg
 
 
-spiral(file_name="./demo-spiral.svg")
+spiral(file_name="./images/spiral.svg")
 
 def radius_function(i, angle, radius, category_total, segments):
   return radius + 2 + (math.cos(angle * 6) * (max(100, i) / 30))
-spiral(file_name="./demo-spiral-flower.svg", radius_function=radius_function)
+spiral(file_name="./images/spiral-flower.svg", radius_function=radius_function)
 
 def radius_function(i, angle, radius, category_total, segments):
   return radius + (0.8 * (i % 10))
-spiral(file_name="./demo-spiral-steps.svg", radius_function=radius_function)
+spiral(file_name="./images/spiral-steps.svg", radius_function=radius_function)
 
 
 def sign(v):
@@ -83,7 +87,7 @@ def radius_function(i, angle, radius, category_total, segments):
   return radius + i_progress * 0.4
 def angle_function(i, angle, radius, category_total, segments):
   return angle - (math.cos(angle * 6) * 0.4)
-spiral(file_name="./demo-spiral-sails.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-sails.svg", radius_function=radius_function, angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -95,13 +99,13 @@ def angle_function(i, angle, radius, category_total, segments):
   d60 = (math.pi * 2) / 6
   angle_progress = abs((angle % d60) - (d60 / 2))
   return angle - (angle_progress * 2)
-spiral(file_name="./demo-spiral-whirlpool.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-whirlpool.svg", radius_function=radius_function, angle_function=angle_function)
 
 
-def angle_function(i, angle, radius, category_total, segments):
-  a = math.cos(angle * 1 * 4) * 0.7
-  return angle + a
-spiral(file_name="./demo-spiral-whirlpool-2.svg", angle_function=angle_function)
+# def angle_function(i, angle, radius, category_total, segments):
+#   a = math.cos(angle * 1 * 4) * 0.7
+#   return angle + a
+# spiral(file_name="./images/spiral-whirlpool-2.svg", angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -110,7 +114,7 @@ def radius_function(i, angle, radius, category_total, segments):
 def angle_function(i, angle, radius, category_total, segments):
   a = math.cos(angle * 2 * 4) * 0.3
   return angle + a
-spiral(file_name="./demo-spiral-loop-back.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-loop-back.svg", radius_function=radius_function, angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -119,7 +123,7 @@ def radius_function(i, angle, radius, category_total, segments):
 def angle_function(i, angle, radius, category_total, segments):
   a = math.cos(angle * 12 + math.pi) * 0.3
   return angle + a
-spiral(file_name="./demo-spiral-fireball.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-fireball.svg", radius_function=radius_function, angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -128,7 +132,7 @@ def radius_function(i, angle, radius, category_total, segments):
 def angle_function(i, angle, radius, category_total, segments):
   a = math.cos(angle * 12) * 0.3
   return angle + a
-spiral(file_name="./demo-spiral-squid.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-squid.svg", radius_function=radius_function, angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -138,7 +142,7 @@ def radius_function(i, angle, radius, category_total, segments):
 def angle_function(i, angle, radius, category_total, segments):
   a = math.cos(angle * 12) * 0.3
   return angle + a
-spiral(file_name="./demo-spiral-spiky.svg", radius_function=radius_function, angle_function=angle_function)
+spiral(file_name="./images/spiral-spiky.svg", radius_function=radius_function, angle_function=angle_function)
 
 
 def radius_function(i, angle, radius, category_total, segments):
@@ -167,6 +171,6 @@ def angle_function(i, angle, radius, category_total, segments):
     fudge = math.sin((angle % d30) * 18)
 
   return angle + (fudge * d10)
-spiral(file_name="./demo-spiral-club.svg",
+spiral(file_name="./images/spiral-club.svg",
   segments=200, interspiral_size=0.05, terminate_tail=False,
   radius_function=radius_function, angle_function=angle_function)

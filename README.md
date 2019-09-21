@@ -3,21 +3,54 @@
 
 Open with InkScape and save as DXF files for <a href="https://london.hackspace.org.uk">the HackSpace</a> laser cutter
 
-![demo-squares](demo-squares.svg "demo-squares from demo-squares.py")
+![squares](demos/images/squares.svg "squares from demos/demo-squares.py")
 
-The following images are from demo-spiral.py
-![demo-spiral](demo-spiral.svg "demo-spiral")
-![demo-spiral-steps](demo-spiral-steps.svg "demo-spiral-steps")
-![demo-spiral-whirlpool](demo-spiral-whirlpool.svg "demo-spiral-whirlpool")
-![demo-spiral-whirlpool-2](demo-spiral-whirlpool-2.svg "demo-spiral-whirlpool-2")
-![demo-spiral-flower](demo-spiral-flower.svg "demo-spiral-flower")
-![demo-spiral-fireball](demo-spiral-fireball.svg "demo-spiral-fireball")
-![demo-spiral-loop-back](demo-spiral-loop-back.svg "demo-spiral-loop-back")
-![demo-spiral-sails](demo-spiral-sails.svg "demo-spiral-sails")
-![demo-spiral-squid](demo-spiral-squid.svg "demo-spiral-squid")
-![demo-spiral-spiky](demo-spiral-spiky.svg "demo-spiral-spiky")
-![demo-spiral-club](demo-spiral-club.svg "demo-spiral-club")
+The following images are from demos/demo-spirals.py
 
-These images were produced during bug fixing.  The ghost is in the machine
-![bug-asymmetric-steps](bug-asymmetric-steps.svg "bug-asymmetric-steps")
-![bug-spiral-rough-cartoon-star](bug-spiral-rough-cartoon-star.svg "bug-spiral-rough-cartoon-star")
+Spiral
+
+![spiral](demos/images/spiral.svg "spiral")
+
+Steps
+
+![spiral-steps](demos/images/spiral-steps.svg "spiral-steps")
+
+Whirlpool
+
+![spiral-whirlpool](demos/images/spiral-whirlpool.svg "spiral-whirlpool")
+
+Flower
+
+![spiral-flower](demos/images/spiral-flower.svg "spiral-flower")
+
+Fireball
+
+![spiral-fireball](demos/images/spiral-fireball.svg "spiral-fireball")
+
+Loop back
+
+![spiral-loop-back](demos/images/spiral-loop-back.svg "spiral-loop-back")
+
+Sails
+
+![spiral-sails](demos/images/spiral-sails.svg "spiral-sails")
+
+Squid
+
+![spiral-squid](demos/images/spiral-squid.svg "spiral-squid")
+
+Spiky
+
+![spiral-spiky](demos/images/spiral-spiky.svg "spiral-spiky")
+
+Club
+
+![spiral-club](demos/images/spiral-club.svg "spiral-club")
+
+Images were produced during bug fixing.  The ghost is in the machine
+
+Asymmetric steps
+![bug-asymmetric-steps](demos/images/bug-asymmetric-steps.svg "bug-asymmetric-steps")
+
+Rough cartoon star
+![bug-spiral-rough-cartoon-star](demos/images/bug-spiral-rough-cartoon-star.svg "bug-spiral-rough-cartoon-star")
