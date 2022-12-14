@@ -3,6 +3,13 @@
 
 Open with InkScape and save as DXF files for <a href="https://london.hackspace.org.uk">the HackSpace</a> laser cutter
 
+Can produce real things like this:
+
+![spiky](48821935002_e0db9ce613_o.jpg)
+![spiky](48821420108_c7845dc5da_o.jpg)
+
+From images like these:
+
 ![squares](demos/images/squares.svg "squares from demos/demo-squares.py")
 
 The following images are from demos/demo-spirals.py
